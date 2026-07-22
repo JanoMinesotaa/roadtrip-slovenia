@@ -1019,12 +1019,13 @@ main { flex: 1; overflow: hidden; position: relative; }
   .filters button { padding: 7px 12px; font-size: 12.5px; }
   .add-place-btn { height: 44px; }
 
-  #itineraryView, #voteView, #packingView, #creditsView, #manualView { padding: 20px 14px; }
+  #itineraryView, #voteView, #packingView, #creditsView, #manualView { padding: 20px 14px; overflow-x: hidden; }
+  .plan-toolbar { max-width: 100%; padding-left: 0; padding-right: 0; }
   .vote-head h2, .pack-head h2 { font-size: 21px; }
   .vote-head .hint, .pack-head .hint { font-size: 12.5px; }
   .plan-toolbar { position: static; margin-bottom: 14px; }
   /* przełącznik planów/tras — przewijalny poziomo zamiast brzydkiego zawijania */
-  .plan-toggle { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .plan-toggle { display: flex; max-width: 100%; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .plan-toggle::-webkit-scrollbar { display: none; }
   .plan-ver-btn, .trasa-toggle-btn { white-space: nowrap; flex: 0 0 auto; }
   .plan-legend { font-size: 11px; line-height: 1.45; }
